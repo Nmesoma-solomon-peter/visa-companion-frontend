@@ -30,7 +30,7 @@ function PotentialConnect() {
 
 
     useEffect(() => {
-        Axios.get("http://192.168.1.65:5000/verified/users/findall", {}, { withCredentials: true, })
+        Axios.get("https://visa-companion-backend.onrender.com/verified/users/findall", {}, { withCredentials: true, })
             .then((output) => {
                 if (output.data.status == false) {
                     navigate("/login")

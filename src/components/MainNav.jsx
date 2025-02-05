@@ -6,7 +6,7 @@ import Axios from 'axios';
 function MainNav(props) {
     const navigate = useNavigate()
     const profileSrc = props.profilePix?.startsWith("uploads")
-        ? `http://192.168.1.65:5000/${props.profilePix}`
+        ? `https://visa-companion-backend.onrender.com/${props.profilePix}`
         : props.profilePix;
     const [searchMode, setSearchMode] = useState(false); // State to toggle search mode
 
@@ -20,7 +20,7 @@ function MainNav(props) {
 
     const handleLogout = () => {
         setLogPop(false); // Close modal
-        Axios.post('http://192.168.1.65:5000/auth/user/signout', {
+        Axios.post('https://visa-companion-backend.onrender.com/auth/user/signout', {
         },
             { withCredentials: true }
         ).then((output)=>{

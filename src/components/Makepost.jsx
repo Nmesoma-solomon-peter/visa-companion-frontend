@@ -52,7 +52,7 @@ function MakePost() {
         //     formData.append("document", selectedDocument);
         // }
 
-        Axios.post('http://192.168.1.65:5000/verified/user/post', formData, {
+        Axios.post('https://visa-companion-backend.onrender.com/verified/user/post', formData, {
             headers: {
                 'Content-Type': 'multipart/form-data',
             },

@@ -3,9 +3,9 @@ import React, { useState } from "react";
 function Post({post}) {
   
 console.log("psot",post);
-console.log(`http://192.168.1.65:5000/${post.userId.profilePix}`);
+console.log(`https://visa-companion-backend.onrender.com/${post.userId.profilePix}`);
 const profileSrc = post.userId.profilePix?.startsWith("uploads")
-        ? `http://192.168.1.65:5000/${post.userId.profilePix}`
+        ? `https://visa-companion-backend.onrender.com/${post.userId.profilePix}`
         : post.userId.profilePix;
 
   
@@ -32,7 +32,7 @@ const profileSrc = post.userId.profilePix?.startsWith("uploads")
             className={`relative ${index === 0 ? "col-span-2" : ""}`}
           >
             <img
-              src={`http://192.168.1.65:5000/${image}`}
+              src={`https://visa-companion-backend.onrender.com/${image}`}
               alt={`Post image ${index + 1}`}
               className="object-cover w-full h-72ij rounded-lg"
             />

@@ -40,7 +40,7 @@ function Register() {
         },
         onSubmit: (formData, { resetForm }) => {
             console.log(formData); // Log the form data or process it
-            Axios.post('http://192.168.1.65:5000/auth/user/signup', {
+            Axios.post('https://visa-companion-backend.onrender.com/auth/user/signup', {
                 fullName: formData.fullName,
                 email: formData.email,
                 Password: formData.Password,

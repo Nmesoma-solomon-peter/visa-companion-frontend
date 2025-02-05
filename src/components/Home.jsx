@@ -23,7 +23,7 @@ function Home() {
     Axios.defaults.withCredentials = true
     const [allPosts, setAllPosts] = useState([])
     useEffect(() => {
-        Axios.get("http://192.168.1.65:5000/verified/users/readallposts", {}, {
+        Axios.get("https://visa-companion-backend.onrender.com/verified/users/readallposts", {}, {
             withCredentials: true, // This ensures cookies are sent
         })
             .then((output) => {

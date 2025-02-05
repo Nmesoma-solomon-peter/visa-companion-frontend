@@ -16,7 +16,7 @@ function MainApp() {
   Axios.defaults.withCredentials = true
 
   useEffect(() => {
-    Axios.get("http://192.168.1.65:5000/verified/users/findloggedinuser/", {}, {
+    Axios.get("https://visa-companion-backend.onrender.com/verified/users/findloggedinuser/", {}, {
       withCredentials: true, // This ensures cookies are sent
     })
       .then((output) => {

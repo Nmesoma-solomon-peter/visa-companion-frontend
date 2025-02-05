@@ -2,7 +2,7 @@ import React from 'react'
 
 function ConnectionOutercard(props) {
     const profileSrc = props.profilePix?.startsWith("uploads")
-        ? `http://192.168.1.65:5000/${props.profilePix}`
+        ? `https://visa-companion-backend.onrender.com/${props.profilePix}`
         : props.profilePix;
     return (
         <>
